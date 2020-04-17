@@ -36,7 +36,7 @@ export class Worker {
                     inReject(inError);
                 }
                 else {
-                    inResolve();
+                    inResolve(inNewDoc);
                 }
             });
         });

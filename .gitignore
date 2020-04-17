@@ -5357,3 +5357,4 @@ server/node_modules/xdg-basedir/license
 server/node_modules/xdg-basedir/package.json
 server/node_modules/xdg-basedir/readme.md
 server/serverInfo.json
+server/dist/contacts.db
