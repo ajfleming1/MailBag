@@ -3,7 +3,7 @@ import fs from "fs";
 import { raw } from "express";
 
 export type IServerInfo = {
-    stmp: {
+    smtp: {
         host: string,
         port: number,
         auth: {

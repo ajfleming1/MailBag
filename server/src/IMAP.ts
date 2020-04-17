@@ -64,9 +64,7 @@ export class Worker {
 
     public async listMessages(inCallOptions: ICallOptions) : Promise<IMessage[]> {
         const client: any = await this.connectToServer();
-
         const mailbox: any = await client.selectMailbox(inCallOptions.mailbox);
-        console.log(inCallOptions.mailbox);
         if(mailbox.exists === 0) {
             await client.close();
             return [];

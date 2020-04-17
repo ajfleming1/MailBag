@@ -53,7 +53,6 @@ app.get("/mailboxes/:mailbox",
             );
             inResponse.json(messages);
         } catch(err) {
-            console.log(err);
             inResponse.send("error");
         }
     }  
@@ -71,7 +70,6 @@ app.get("/mailboxes/:mailbox/:id",
             );
             inResponse.send(message);
         } catch(err) {
-            console.log(err);
             inResponse.send("error");
         }
     }
