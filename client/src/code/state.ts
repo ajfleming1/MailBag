@@ -53,7 +53,7 @@ export function createState(inParentComponent: React.Component) {
                         currentView: "compose",
                         messageTo: this.state.messageFrom,
                         messageSubject: "RE:" + this.state.messageSubject,
-                        messageBody: `\n\n----- Original Message -----\n\n\${this.state.messageBody}`,
+                        messageBody: `\n\n----- Original Message -----\n\n\ ${this.state.messageBody}`,
                         messageFrom: config.userEmail
                     });
                     break;
